@@ -1,0 +1,149 @@
+.LeftBar {
+    position: fixed;
+    width: 290px;
+    padding: 22px;
+
+    background-color: #fff;
+    box-shadow: 0 4px 9px rgba(#000, 0.05);
+}
+
+.Leftbar__logo {
+    display: block;
+    width: 100%;
+
+    margin-bottom: 22px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.Leftbar__divider {
+    height: 1px;
+    width: 100%;
+    background-color: #d8e0e5;
+}
+
+.Leftbar__menu {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.Leftbar__menu-header,
+.Leftbar__club-header {
+    font-weight: 600;
+}
+
+.Leftbar__menu-item {
+    display: flex;
+    align-items: center;
+    // margin-top: 30px;
+    padding: 12px 0;
+
+    cursor: pointer;
+
+    img {
+        margin-right: 15px;
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+    &.--active {
+        margin-right: -20px;
+        color: #050c42;
+        font-weight: 700;
+
+        border-right: 3px solid #050c42;
+    }
+}
+
+.Leftbar__club {
+    margin: 15px 0 30px;
+}
+
+.Leftbar__club-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 25px 0 30px;
+}
+
+.Leftbar__club-title {
+    margin-top: 8px;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #050c42;
+}
+
+.Leftbar__club-favorite {
+    margin-top: 20px;
+    padding: 10px 24px;
+
+    display: block;
+    width: 100%;
+    background-color: #ecf0f3;
+    border-radius: 17px;
+
+    color: #050c42;
+    list-style: none;
+
+    & > span {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    li {
+        margin: 8px 0;
+
+        display: flex;
+        align-items: center;
+
+        & > div {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+        }
+
+        & > span {
+            font-size: 14px;
+        }
+    }
+}
+
+.Leftbar__club-change {
+    margin: 20px 0 30px;
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    span {
+        margin-left: 8px;
+
+        font-size: 16px;
+        font-weight: 700;
+        color: #050c42;
+    }
+}
+
+.Leftbar__feedback {
+    display: flex;
+    align-items: center;
+
+    margin: 150px 0 50px;
+    padding: 8px 16px;
+
+    background-color: #ec805b;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    & > span {
+        margin-left: 10px;
+        color: #fff;
+    }
+}
