@@ -15,9 +15,10 @@ export const ContentStats = ({ as }) => {
     const chartValues = Object.values(chartData[as])
     const chartKeys = Object.keys(chartData[as])
     const average = chartValues.reduce((p, a) => {
-        return (p + a) / chartValues.length
+        return p + a
     })
-    console.log(average)
+
+    const result = Math.round(average / chartValues.length)
 
     const data = {
         labels: chartKeys,
@@ -26,12 +27,27 @@ export const ContentStats = ({ as }) => {
                 axis: "y",
                 data: chartValues,
                 fill: false,
-                backgroundColor: ["rgba(240, 85, 111, .7)"],
+                backgroundColor: ["rgba(240, 85, 111, 1)"],
+                barThickness: 20,
             },
         ],
     }
     const options = {
         indexAxis: "y",
+        // maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
+        options: {
+            scales: {
+                x: {
+                    min: 0,
+                    max: 100,
+                },
+            },
+        },
     }
     return (
         <div className="ContentStats">
@@ -54,9 +70,7 @@ export const ContentStats = ({ as }) => {
                             <img src={flag} alt="" />
                         </span>
                     </div>
-                    <div className="ContentStats__info-score">
-                        {average.toFixed(1)}
-                    </div>
+                    <div className="ContentStats__info-score">{result}</div>
                     <div className="ContentStats__info-number">{number}</div>
                     <div className="ContentStats__info-photo">
                         <img src={photo} alt="" />
@@ -66,7 +80,14 @@ export const ContentStats = ({ as }) => {
                     <img src={btn} alt="" />
                 </div>
             </div>
-            <Chart data={data} options={options} type="bar" />
+            <Chart
+                data={data}
+                options={options}
+                type="bar"
+                className="ContentChart"
+                width={1000}
+                height={650}
+            />
         </div>
     )
 }
