@@ -1,9 +1,19 @@
+import argentina from "../img/content/flags/argentina.png"
+import russia from "../img/content/flags/russia.png"
+import brazil from "../img/content/flags/brazil.png"
+import france from "../img/content/flags/france.png"
+import belgium from "../img/content/flags/belgium.png"
+import netherlands from "../img/content/flags/netherlands.png"
+import sweden from "../img/content/flags/sweden.png"
+import nigeria from "../img/content/flags/nigeria.png"
+
 export const mockApi = [
     {
         id: 0,
         name: "A. Selikhov",
         position: { full: "Goalkeeper", short: "GK" },
         number: 57,
+        flag: russia,
         checked: false,
         stats: {
             acceleration: 63,
@@ -29,6 +39,7 @@ export const mockApi = [
         name: "Ayrton",
         position: { full: "Left Back", short: "LB" },
         number: 6,
+        flag: brazil,
         checked: false,
         stats: {
             acceleration: 86,
@@ -54,6 +65,7 @@ export const mockApi = [
         name: "G. Dzhikiya",
         position: { full: "Left Back", short: "LB" },
         number: 14,
+        flag: russia,
         checked: false,
         stats: {
             acceleration: 82,
@@ -79,6 +91,7 @@ export const mockApi = [
         name: "S. Gigot",
         position: { full: "Centre Back", short: "CB" },
         number: 2,
+        flag: france,
         checked: false,
         stats: {
             acceleration: 63,
@@ -104,6 +117,7 @@ export const mockApi = [
         name: "M. Caufriez",
         position: { full: "Centre Back", short: "CB" },
         number: 3,
+        flag: belgium,
         checked: false,
         stats: {
             acceleration: 53,
@@ -129,6 +143,7 @@ export const mockApi = [
         name: "Q. Promes",
         position: { full: "Left Forward", short: "LF" },
         number: 24,
+        flag: netherlands,
         checked: false,
         stats: {
             acceleration: 87,
@@ -154,6 +169,7 @@ export const mockApi = [
         name: "N. Umyarov",
         position: { full: "Centre Midfield", short: "CM" },
         number: 18,
+        flag: russia,
         checked: false,
         stats: {
             acceleration: 63,
@@ -179,6 +195,7 @@ export const mockApi = [
         name: "M. Ignatov",
         position: { full: "Centre Midfield", short: "CM" },
         number: 22,
+        flag: russia,
         checked: false,
         stats: {
             acceleration: 65,
@@ -204,6 +221,7 @@ export const mockApi = [
         name: "A. Lomovitsky",
         position: { full: "Centre Midfield", short: "CM" },
         number: 17,
+        flag: russia,
         checked: false,
         stats: {
             acceleration: 79,
@@ -229,6 +247,7 @@ export const mockApi = [
         name: "J. Larsson",
         position: { full: "Centre Forward", short: "CF" },
         number: 11,
+        flag: sweden,
         checked: false,
         stats: {
             acceleration: 85,
@@ -254,6 +273,7 @@ export const mockApi = [
         name: "A. Sobolev",
         position: { full: "Centre Forward", short: "CF" },
         number: 7,
+        flag: russia,
         checked: false,
         stats: {
             acceleration: 70,
@@ -279,6 +299,7 @@ export const mockApi = [
         name: "V. Moses",
         position: { full: "Right Midfield", short: "RM" },
         number: 8,
+        flag: nigeria,
         checked: false,
         stats: {
             acceleration: 77,
@@ -304,6 +325,7 @@ export const mockApi = [
         name: "R. Zobnin",
         position: { full: "Centre Midfield", short: "CM" },
         number: 47,
+        flag: russia,
         checked: false,
         stats: {
             acceleration: 74,
@@ -329,6 +351,7 @@ export const mockApi = [
         name: "Z. Bakaev",
         position: { full: "Centre Midfield", short: "CM" },
         number: 10,
+        flag: russia,
         checked: false,
         stats: {
             acceleration: 86,
@@ -354,6 +377,7 @@ export const mockApi = [
         name: "A. Eschenko",
         position: { full: "Left Back", short: "LB" },
         number: 38,
+        flag: russia,
         checked: false,
         stats: {
             acceleration: 66,
@@ -379,6 +403,7 @@ export const mockApi = [
         name: "E. Ponce",
         position: { full: "Centre Forward", short: "CF" },
         number: 9,
+        flag: argentina,
         checked: false,
         stats: {
             acceleration: 78,

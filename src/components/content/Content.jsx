@@ -4,7 +4,7 @@ import { ContentPlayers } from "./ContentPlayers"
 import { ContentStats } from "./ContentStats"
 
 export const Content = () => {
-    const [as, setAs] = useState("")
+    const [as, setAs] = useState(15)
 
     const changeHandler = (e) => {
         setAs(e.target.value)
