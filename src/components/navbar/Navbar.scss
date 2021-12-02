@@ -1,13 +1,16 @@
 .Navbar {
+    position: relative;
     margin-left: 290px;
     padding: 8px 50px;
+
+    z-index: 10;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     background-color: #fff;
-    box-shadow: 0 4px 9px rgba(#000, 0.05);
+    box-shadow: 0 4px 9px rgba(#000, 0.25);
 }
 .Navbar__wrapper {
     display: flex;
