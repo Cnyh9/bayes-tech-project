@@ -17,6 +17,7 @@ $laptop: 107px;
 
     @media (max-width: 1800px) {
         margin-left: $laptop;
+        padding: 8px 30px;
     }
 }
 .Navbar__wrapper {
@@ -33,12 +34,20 @@ $laptop: 107px;
 
     cursor: pointer;
 
+    @media (max-width: 1800px) {
+        font-size: 10px;
+    }
+
     &.--main {
         font-size: 28px;
         font-weight: 600;
         color: #050c42;
 
         cursor: default;
+
+        @media (max-width: 1800px) {
+            font-size: 20px;
+        }
     }
     &.--active {
         margin-bottom: -20px;
@@ -47,6 +56,12 @@ $laptop: 107px;
         color: #050c42;
 
         border-bottom: 3px solid #050c42;
+
+        @media (max-width: 1800px) {
+            margin-bottom: -18px;
+            padding-bottom: 14px;
+            border-bottom: 2px solid #050c42;
+        }
     }
 }
 
@@ -55,4 +70,10 @@ $laptop: 107px;
     width: 40%;
     text-align: right;
     // flex: 1;
+
+    & > img {
+        @media (max-width: 1800px) {
+            content: url("../../img//navbar/ava-sm.png");
+        }
+    }
 }

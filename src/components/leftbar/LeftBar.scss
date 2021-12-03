@@ -13,6 +13,7 @@ $laptop: 107px;
 
     @media (max-width: 1800px) {
         width: $laptop;
+        padding: 12px;
     }
 }
 
@@ -25,6 +26,19 @@ $laptop: 107px;
     overflow: hidden;
 
     cursor: pointer;
+
+    @media (max-width: 1800px) {
+        margin-bottom: 10px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    & > img {
+        @media (max-width: 1800px) {
+            content: url("../../img/leftbar/logo-sm.png");
+        }
+    }
 }
 
 .Leftbar__divider {
@@ -36,11 +50,21 @@ $laptop: 107px;
 .Leftbar__menu {
     margin-top: 15px;
     margin-bottom: 30px;
+
+    @media (max-width: 1800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .Leftbar__menu-header,
 .Leftbar__club-header {
     font-weight: 600;
+
+    @media (max-width: 1800px) {
+        font-size: 11px;
+    }
 }
 
 .Leftbar__menu-item {
@@ -53,10 +77,18 @@ $laptop: 107px;
 
     img {
         margin-right: 15px;
+
+        @media (max-width: 1800px) {
+            margin: 0;
+        }
     }
 
     span {
         font-size: 18px;
+
+        @media (max-width: 1800px) {
+            display: none;
+        }
     }
 
     &.--active {
@@ -65,11 +97,20 @@ $laptop: 107px;
         font-weight: 700;
 
         border-right: 3px solid #050c42;
+
+        @media (max-width: 1800px) {
+            margin-right: -38px;
+            padding-right: 38px;
+        }
     }
 }
 
 .Leftbar__club {
     margin: 15px 0 30px;
+
+    @media (max-width: 1800px) {
+        margin: 10px 0 0 0;
+    }
 }
 
 .Leftbar__club-layout {
@@ -78,6 +119,10 @@ $laptop: 107px;
     align-items: center;
 
     margin: 25px 0 30px;
+
+    @media (max-width: 1800px) {
+        margin: 10px 0;
+    }
 }
 
 .Leftbar__club-title {
@@ -86,6 +131,10 @@ $laptop: 107px;
     font-size: 20px;
     font-weight: 600;
     color: #050c42;
+
+    @media (max-width: 1800px) {
+        display: none;
+    }
 }
 
 .Leftbar__club-favorite {
@@ -100,9 +149,19 @@ $laptop: 107px;
     color: #050c42;
     list-style: none;
 
+    @media (max-width: 1800px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     & > span {
         font-size: 14px;
         font-weight: 600;
+
+        @media (max-width: 1800px) {
+            display: none;
+        }
     }
 
     li {
@@ -111,14 +170,26 @@ $laptop: 107px;
         display: flex;
         align-items: center;
 
+        @media (max-width: 1800px) {
+            margin: 0;
+        }
+
         & > div {
             width: 20%;
             display: flex;
             justify-content: center;
+
+            @media (max-width: 1800px) {
+                display: block;
+            }
         }
 
         & > span {
             font-size: 14px;
+
+            @media (max-width: 1800px) {
+                display: none;
+            }
         }
     }
 }
@@ -130,18 +201,27 @@ $laptop: 107px;
 
     cursor: pointer;
 
+    @media (max-width: 1800px) {
+        margin: 10px 0;
+    }
+
     span {
         margin-left: 8px;
 
         font-size: 16px;
         font-weight: 700;
         color: #050c42;
+
+        @media (max-width: 1800px) {
+            display: none;
+        }
     }
 }
 
 .Leftbar__feedback {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     margin: 150px 0 86px;
     padding: 8px 16px;
@@ -151,8 +231,27 @@ $laptop: 107px;
 
     cursor: pointer;
 
+    @media (max-width: 1800px) {
+        margin: 82px auto 30px;
+
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        border-radius: 50%;
+    }
+
+    & > img {
+        @media (max-width: 1800px) {
+            content: url("../../img//leftbar/feedback-sm.png");
+        }
+    }
+
     & > span {
         margin-left: 10px;
         color: #fff;
+
+        @media (max-width: 1800px) {
+            display: none;
+        }
     }
 }

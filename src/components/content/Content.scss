@@ -11,6 +11,7 @@ $laptop: 107px;
 
     @media (max-width: 1800px) {
         margin-left: $laptop;
+        padding: 17px;
     }
 }
 
@@ -31,6 +32,13 @@ $laptop: 107px;
     font-weight: 600;
     color: #050c42;
 
+    cursor: pointer;
+
+    @media (max-width: 1800px) {
+        padding: 14px 36px;
+        font-size: 9px;
+    }
+
     &.--active {
         background-color: #fff;
     }
@@ -42,6 +50,10 @@ $laptop: 107px;
     padding: 40px;
 
     background-color: #fff;
+
+    @media (max-width: 1800px) {
+        padding: 17px 30px;
+    }
 }
 
 .Content__players {
@@ -49,12 +61,20 @@ $laptop: 107px;
 
     border-radius: 14px;
     background-color: #ecf0f3;
+
+    @media (max-width: 1800px) {
+        padding: 14px;
+    }
 }
 
 .Content__players-header {
     font-size: 18px;
     font-weight: 600;
     color: #050c42;
+
+    @media (max-width: 1800px) {
+        font-size: 12px;
+    }
 }
 
 .Content__players-item {
@@ -63,10 +83,29 @@ $laptop: 107px;
     margin-top: 20px;
 
     font-size: 18px;
+
+    & > input {
+        cursor: pointer;
+    }
+
+    @media (max-width: 1800px) {
+        font-size: 10px;
+    }
+}
+.Content__players-item-name {
+    margin-right: 40px;
+
+    @media (max-width: 1800px) {
+        margin-right: 0;
+    }
 }
 
 .ContentStats {
     min-width: 950px;
+
+    @media (max-width: 1800px) {
+        min-width: 600px;
+    }
 }
 
 .ContentStats__header {
@@ -82,6 +121,11 @@ $laptop: 107px;
     font-weight: 600;
     line-height: 26px;
     color: #050c42;
+
+    @media (max-width: 1800px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 .ContentStats__info {
@@ -99,6 +143,13 @@ $laptop: 107px;
 
     overflow: hidden;
 
+    @media (max-width: 1800px) {
+        width: 195px;
+        height: 67px;
+
+        padding: 8px 20px;
+    }
+
     span {
         line-height: 1;
     }
@@ -109,6 +160,11 @@ $laptop: 107px;
     font-weight: 600;
     line-height: 26px;
     color: #050c42;
+
+    @media (max-width: 1800px) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .ContentStats__info-pos {
@@ -116,6 +172,11 @@ $laptop: 107px;
     font-weight: 700;
     line-height: 32px;
     color: #d0d8df;
+
+    @media (max-width: 1800px) {
+        font-size: 10px;
+        line-height: 22px;
+    }
 }
 
 .ContentStats__info-flag {
@@ -137,6 +198,13 @@ $laptop: 107px;
 
     font-size: 16px;
     color: #fff;
+
+    @media (max-width: 1800px) {
+        width: 17px;
+        height: 17px;
+
+        font-size: 11px;
+    }
 }
 
 .ContentStats__info-number {
@@ -154,6 +222,10 @@ $laptop: 107px;
     font-weight: 700;
     color: rgba(#050c42, 0.1);
     line-height: 100px;
+
+    @media (max-width: 1800px) {
+        font-size: 72px;
+    }
 }
 
 .ContentStats__info-photo {
@@ -163,6 +235,12 @@ $laptop: 107px;
 
     overflow: hidden;
     line-height: 0;
+
+    & > img {
+        @media (max-width: 1800px) {
+            content: url("../../img//content/photo-sm.png");
+        }
+    }
 }
 
 .ContentStats__btn {
@@ -176,8 +254,17 @@ $laptop: 107px;
 
     background-color: #ec805b;
     border-radius: 8px;
+
+    cursor: pointer;
 }
 
 .ContentChart {
     margin-top: 20px;
+
+    cursor: pointer;
+
+    @media (max-width: 1800px) {
+        width: 600px !important;
+        height: 470px !important;
+    }
 }

@@ -20,7 +20,9 @@ export const ContentPlayers = () => {
                             id={player.id}
                             style={{ marginRight: 10 }}
                         />
-                        <div style={{ marginRight: 40 }}>{player.name}</div>
+                        <div className="Content__players-item-name">
+                            {player.name}
+                        </div>
                         <div style={{ textAlign: "end", flex: 1 }}>
                             {player.position?.full}
                         </div>
