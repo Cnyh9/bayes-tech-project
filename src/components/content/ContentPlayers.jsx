@@ -1,22 +1,25 @@
 import React from "react"
-import { mockApi } from "../../api"
+import { useDispatch, useSelector } from "react-redux"
+import { togglePlayer } from "../../store/teamSlice"
 
-export const ContentPlayers = ({ changeHandler }) => {
+export const ContentPlayers = () => {
+    const players = useSelector((store) => store.team)
+    const dispatch = useDispatch()
+
     return (
         <div className="Content__players">
             <div className="Content__players-header">Выбрать игрока</div>
-            {mockApi.map((player) => {
+            {players.map((player) => {
                 return (
                     <div key={player.id} className="Content__players-item">
                         <input
                             type="radio"
                             name="player"
                             value={player.id}
-                            onChange={changeHandler}
+                            onChange={() => dispatch(togglePlayer(player.id))}
                             id={player.id}
                             style={{ marginRight: 10 }}
                         />
-                        {/* <label htmlFor={player.id}>{player.name}</label>     */}
                         <div style={{ marginRight: 40 }}>{player.name}</div>
                         <div style={{ textAlign: "end", flex: 1 }}>
                             {player.position?.full}

@@ -1,10 +1,17 @@
+$full-hd: 290px;
+$laptop: 107px;
+
 .Content {
-    margin-left: 290px;
+    margin-left: $full-hd;
     padding: 25px;
 
     background-color: #f7f8fa;
 
     overflow: hidden;
+
+    @media (max-width: 1800px) {
+        margin-left: $laptop;
+    }
 }
 
 .Content__layout {

@@ -1,12 +1,19 @@
+$full-hd: 290px;
+$laptop: 107px;
+
 .LeftBar {
     position: fixed;
-    width: 290px;
+    width: $full-hd;
     padding: 22px;
 
     z-index: 200;
 
     background-color: #fff;
     box-shadow: 0 4px 9px rgba(#000, 0.05);
+
+    @media (max-width: 1800px) {
+        width: $laptop;
+    }
 }
 
 .Leftbar__logo {

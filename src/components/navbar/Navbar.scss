@@ -1,6 +1,9 @@
+$full-hd: 290px;
+$laptop: 107px;
+
 .Navbar {
     position: relative;
-    margin-left: 290px;
+    margin-left: $full-hd;
     padding: 8px 50px;
 
     z-index: 10;
@@ -11,6 +14,10 @@
 
     background-color: #fff;
     box-shadow: 0 4px 9px rgba(#000, 0.25);
+
+    @media (max-width: 1800px) {
+        margin-left: $laptop;
+    }
 }
 .Navbar__wrapper {
     display: flex;

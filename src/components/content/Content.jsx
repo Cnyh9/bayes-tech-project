@@ -1,14 +1,15 @@
 import React, { useState } from "react"
+import { Loader } from "../Loader/Loader"
 import "./Content.scss"
 import { ContentPlayers } from "./ContentPlayers"
 import { ContentStats } from "./ContentStats"
 
 export const Content = () => {
-    const [as, setAs] = useState(15)
+    const [isLoading, setIsLoading] = useState(false)
+    setTimeout(() => {
+        setIsLoading(true)
+    }, 1000)
 
-    const changeHandler = (e) => {
-        setAs(e.target.value)
-    }
     return (
         <div className="Content">
             <div className="Content__layout">
@@ -21,8 +22,16 @@ export const Content = () => {
                     </div>
                 </div>
                 <div className="Content__body">
-                    <ContentPlayers changeHandler={changeHandler} />
-                    <ContentStats as={as} />
+                    {isLoading ? (
+                        <>
+                            <ContentPlayers />
+                            <ContentStats />
+                        </>
+                    ) : (
+                        <div className="lds__wrapper">
+                            <Loader />
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
